@@ -1,0 +1,135 @@
+.sec1 {
+  display: flex;
+  height: auto;
+  align-items: center; /* center content */
+  justify-content: center;  /* center text */
+  padding: 0px 80px;
+  gap: 60px;
+}
+.sec-1-1 {
+  padding-right: 20px;
+  margin-left: 50px;
+}
+
+.sec-1-1 img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;       /* makes it circular */
+  object-fit: cover;        /* keeps the image inside the circle */
+  border: 3px solid #000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* optional shadow */
+}
+
+.social img{
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+.social img:hover {
+    transform:scale(0.9);
+    cursor: pointer;
+
+}
+.sec-1-2 {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.sec-1-2-1 {
+    font-weight: 600; 
+    color: #333;
+}
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: black; 
+    margin: 10px 0;
+}
+.sec-1-2-3 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #181616;
+}
+.sec-1-2 p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #141212;
+}
+.btns{
+    display: flex;
+    gap: 20px;
+}
+.btns > :nth-child(1) {
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btns > :nth-child(1):hover {
+    background-color: black;
+    color: aquamarine;
+}
+.btns > :nth-child(2) {
+  padding: 10px 20px;
+  background-color: black;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: aliceblue;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btns > :nth-child(2):hover {
+    background-color: aquamarine;
+    color: rgb(12, 11, 11);
+
+}
+@media (max-width: 1024px) {
+  .sec1{
+    flex-direction: column;
+    height: 50%;
+    margin-bottom: 20px;
+
+    
+  }
+  .sec-1-1 {
+    margin-left: 0px;
+  }
+  .sec-1-2 {
+    align-items: center;
+    padding-bottom: 50px;
+
+  }
+}
+@media (max-width: 600px) {
+  .sec1{
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  p{
+    text-align: space-evenly;
+    width:70%;
+  }
+  .sec-1-1 {
+    margin-top: 100px;
+  }
+  .sec-1-1 img {
+    width: 300px;
+  }
+  .sec-1-2 {
+    align-items: center;
+    padding: 0 15px;
+  }
+}
